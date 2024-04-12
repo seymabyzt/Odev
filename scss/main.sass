@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+
+$colorDark: rgb(24, 60, 87)
+$colorBlue: rgb(0, 117, 163)
+$colorlight:rgb(228, 240, 245)
+$color:rgb(204, 228, 237)
+$white: rgb(255, 255, 255)
+$bggradiant:linear-gradient(80deg, #46a5bd 0%, #116a8d 100%)
+
+@mixin flex($display, $align-items, $justify-content)
+    display: $display
+    align-items: $align-items
+    justify-content: $justify-content
+
+@mixin center($align-items, $justify-content)
+    align-items: $align-items
+    justify-content: $justify-content
+@mixin item($flex, $margin, $width)
+    flex: $flex
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    font-size: 1,2rem
+    font-family: Arial, Helvetica, sans-serif
+
+h1,h2,h3,h4,h5,h6,p
+    line-height: 1.6
+    letter-spacing: 0.03rem
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+
+.container
+    width: 1240px
+    margin: 0 auto
+
+.p
+    &-x
+        padding: 0 50px
+    
+    &-y
+        padding: 50px 0
+    
+    &-xy
+        padding: 50px
+    &-top
+        padding-top: 100px
+
+.flex
+    @include flex(flex, center, center)
+
+@mixin btngradiant($background, $border, $color)
+    background: $background
+    border: $border
+    color: $color
+    
+.btn-gradiant
+    @include btngradiant($bggradiant, none, $color)
+    cursor: pointer
+    display: block
+
+
+.btn
+    margin: 5px
+    padding: 8px 25px
+    text-align: center
+    cursor: pointer
+    border-radius: 5px
+    display: inline-block
+    font-size: 1rem
+    border: none
+    color: $color
+    background: $bggradiant
+    &-2
+        color: $colorDark
+        background: $color
+
+@mixin caption($font, $color)
+    font-size: $font
+    color: $color
+
+.caption
+    text-align: center
+    padding: 180px 0 50px 0
+    h6
+        @include caption(1rem , $colorBlue)
+    h1
+        @include caption(2rem , $colorDark)
+        margin-top: 15px
+    h4
+        @include caption(1rem , $colorDark)
+        opacity: 0.5
+
+    // @media (max-width: 768px) 
+//   .navbar 
+//     width: 100%
+//     .check-btn 
+//       display: block
+    

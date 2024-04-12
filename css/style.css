@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1, 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.6;
+  letter-spacing: 0.03rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.p-x {
+  padding: 0 50px;
+}
+.p-y {
+  padding: 50px 0;
+}
+.p-xy {
+  padding: 50px;
+}
+.p-top {
+  padding-top: 100px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-gradiant {
+  background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+  border: none;
+  color: rgb(204, 228, 237);
+  cursor: pointer;
+  display: block;
+}
+
+.btn {
+  margin: 5px;
+  padding: 8px 25px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1rem;
+  border: none;
+  color: rgb(204, 228, 237);
+  background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+}
+.btn-2 {
+  color: rgb(24, 60, 87);
+  background: rgb(204, 228, 237);
+}
+
+.caption {
+  text-align: center;
+  padding: 180px 0 50px 0;
+}
+.caption h6 {
+  font-size: 1rem;
+  color: rgb(0, 117, 163);
+}
+.caption h1 {
+  font-size: 2rem;
+  color: rgb(24, 60, 87);
+  margin-top: 15px;
+}
+.caption h4 {
+  font-size: 1rem;
+  color: rgb(24, 60, 87);
+  opacity: 0.5;
+}
+
+#home-page {
+  background-color: rgb(0, 117, 163);
+  height: 100vh;
+  position: relative;
+}
+
+#navbar {
+  background: rgb(255, 255, 255);
+  box-shadow: 0px, 3px, 10px, 0px rgba(24, 59, 86, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 70px;
+  display: flex;
+}
+#navbar #logo {
+  flex: 10%;
+  margin: auto 10px;
+}
+#navbar #logo img {
+  width: 100%;
+}
+#navbar .nav-item {
+  height: 100%;
+  display: flex;
+  font-weight: bold;
+  flex: 70%;
+  justify-content: flex-end;
+}
+#navbar .nav-item ul {
+  display: flex;
+  column-gap: 1.2rem;
+  align-items: center;
+}
+#navbar .nav-item ul li {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+#navbar .nav-item ul a {
+  color: rgb(24, 60, 87);
+}
+#navbar .btn-navbar {
+  flex: 20%;
+  align-content: center;
+  margin-right: 10px;
+}
+#navbar .btn-navbar .btn-gradiant {
+  right: 0;
+  width: 50%;
+  height: 50%;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+}
+#navbar .btn-navbar .btn-gradiant a {
+  color: rgb(228, 240, 245);
+}
+
+#home-main .container {
+  padding: 100px 100px 50px 100px;
+}
+#home-main-phone {
+  text-align: center;
+  margin: 0 100px;
+  padding: 0 30px;
+  color: rgb(228, 240, 245);
+}
+#home-main-phone h1 {
+  font-size: 3rem;
+}
+#home-main-phone h4 {
+  opacity: 0.5;
+  margin-top: 15px;
+}
+#home-main-phone i {
+  font-size: 1.5rem;
+}
+
+#phone-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#phone-item .phone-item-1, #phone-item .phone-item-3 {
+  flex: 30%;
+}
+#phone-item .phone-item-2 {
+  flex: 40%;
+}
+#phone-item img {
+  width: 100%;
+}
+
+.watch-video {
+  background-color: rgb(0, 117, 163);
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 80%;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.watch-video i {
+  color: rgb(255, 255, 255);
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 55%;
+  left: 90px;
+  font-size: 20px;
+  opacity: 0.6;
+  color: rgb(228, 240, 245);
+  gap: 1.2rem;
+}
+
+.bg-line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(228, 240, 245);
+  opacity: 0.5;
+  left: 15%;
+  top: 0;
+}
+
+.bg-rounded, .bg-rounded-2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10%;
+  top: 50%;
+  border-radius: 50%;
+  border: 1px solid rgb(228, 240, 245);
+}
+
+.bg-rounded-2 {
+  top: 20%;
+}
+
+.bg-line-second {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(228, 240, 245);
+  opacity: 0.5;
+  right: 10%;
+  top: 0;
+}
+
+#card-box {
+  display: flex;
+}
+
+.card {
+  flex: 30%;
+  justify-content: center;
+  text-align: center;
+  border: 1em solid rgba(250, 250, 250, 0.9);
+  border-radius: 10px;
+  margin: 15px;
+}
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card-1 {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card i {
+  color: rgb(0, 117, 163);
+  background: url(https://themesdesign.in/styza/layout/images/service/bomb.png);
+}
+.card h5 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: rgb(24, 60, 87);
+}
+.card p {
+  font-size: 1rem;
+  color: rgb(24, 60, 87);
+  opacity: 0.7;
+}
+
+#app-tech-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#pills-tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pills-tab-content .pills-tab-content-middle {
+  flex: 40%;
+}
+#pills-tab-content .pills-tab-content-middle img {
+  width: 100%;
+}
+
+.card-left, .card-right {
+  flex: 30%;
+  justify-content: center;
+  text-align: right;
+}
+.card-left i, .card-right i {
+  color: rgb(0, 117, 163);
+}
+.card-left h5, .card-right h5 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: rgb(24, 60, 87);
+}
+.card-left p, .card-right p {
+  font-size: 1rem;
+  color: rgb(24, 60, 87);
+  opacity: 0.7;
+}
+
+.card-right {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

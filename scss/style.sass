@@ -1,0 +1,185 @@
+
+@import 'main' 
+
+#home-page
+    background-color: $colorBlue
+    height: 100vh
+    position: relative
+#navbar
+    background: $white
+    box-shadow: 0px, 3px, 10px, 0px rgba(24,59,86,.2)
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1
+    height: 70px
+    display: flex
+    #logo
+        flex: 10%
+        margin: auto 10px
+        img
+            width: 100%
+    .nav-item
+        height: 100%
+        display: flex
+        font-weight: bold
+        flex: 70%
+        justify-content: flex-end
+        ul
+            display: flex
+            column-gap: 1.2rem
+            align-items: center
+            li
+                font-size: 0.8rem
+                padding: 10px
+            a
+                color: $colorDark
+        
+    .btn-navbar
+        flex: 20%
+        align-content: center
+        margin-right: 10px
+        .btn-gradiant
+            right: 0
+            width: 50%
+            height: 50%
+            font-size: 0.8rem
+            border-radius: 0.5rem
+            margin-left: auto
+            a
+                color: $colorlight
+    
+#home-main
+    .container
+        padding: 100px 100px 50px 100px
+    &-phone
+        text-align: center
+        margin: 0 100px
+        padding: 0 30px
+        color: $colorlight
+        h1
+            font-size: 3rem
+        h4
+            opacity: 0.5
+            margin-top: 15px
+        i
+            font-size: 1.5rem
+
+#phone-item
+    @include flex(flex, center, center)
+    .phone-item-1
+        @include item(30% , 50px , 100%)
+    .phone-item-2
+        @include item(40% , 50px , 100%)
+    .phone-item-3
+        @extend .phone-item-1
+    img
+        width: 100%
+        
+.watch-video
+    background-color: $colorBlue
+    position: absolute
+    right: 50%
+    left: 50%
+    top: 80%
+    padding: 10px 15px
+    border-radius: 50%
+    i
+        color: $white
+
+.social-media-icons
+    @include flex(flex, center, center)
+    flex-direction: column
+    position: absolute
+    top: 55%
+    left: 90px
+    font-size: 20px
+    opacity: 0.6
+    color: $colorlight
+    gap: 1.2rem
+
+.bg-line 
+    position: absolute
+    width: 1px
+    height: 100%
+    background-color: $colorlight
+    opacity: 0.5
+    left: 15%
+    top: 0
+
+.bg-rounded 
+    position: absolute
+    width: 20px
+    height: 20px
+    left: 10%
+    top: 50%
+    border-radius: 50%
+    border: 1px solid $colorlight
+.bg-rounded-2
+    @extend .bg-rounded
+    top: 20%  
+
+.bg-line-second 
+    position: absolute
+    width: 1px
+    height: 100%
+    background-color: $colorlight
+    opacity: 0.5
+    right: 10%
+    top: 0
+
+#card-box
+    display: flex
+
+.card
+    flex: 30%
+    justify-content: center
+    text-align: center
+    border: 1em solid rgba(250, 250, 250, 0.9)
+    border-radius: 10px
+    margin: 15px
+    &:hover
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+    &-1
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+    i
+        color: $colorBlue
+        background: url(https://themesdesign.in/styza/layout/images/service/bomb.png)
+    h5
+        font-size: 1.5rem
+        margin-top: 15px
+        color: $colorDark
+    p
+        font-size: 1rem
+        color: $colorDark
+        opacity: 0.7
+
+#app-tech-button
+    @include flex(flex, center, center)
+    margin-bottom: 50px
+    
+#pills-tab-content
+    @include flex(flex, center, center)
+    .pills-tab-content-middle
+        flex: 40%
+        img
+            width: 100%
+.card-left
+    flex: 30%
+    justify-content: center
+    text-align: right
+    i
+        color: $colorBlue
+    h5
+        font-size: 1.5rem
+        margin-top: 15px
+        color: $colorDark
+    p
+        font-size: 1rem
+        color: $colorDark
+        opacity: 0.7
+.card-right
+        @extend .card-left
+        text-align: left
+       
