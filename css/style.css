@@ -39,7 +39,7 @@ a {
   padding: 50px;
 }
 .p-top {
-  padding-top: 100px;
+  padding-top: 6rem;
 }
 
 .flex {
@@ -92,9 +92,25 @@ a {
   opacity: 0.5;
 }
 
+.margin-top {
+  margin-top: 5rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 425px;
+    margin: 0 auto;
+  }
+  #navbar {
+    flex-direction: column;
+  }
+  #card-box {
+    flex-direction: column;
+  }
+}
 #home-page {
   background-color: rgb(0, 117, 163);
-  height: 100vh;
+  height: 110vh;
   position: relative;
 }
 
@@ -173,6 +189,8 @@ a {
 }
 
 #phone-item {
+  margin: 2rem 4rem;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,6 +264,10 @@ a {
   opacity: 0.5;
   right: 10%;
   top: 0;
+}
+
+#what-we-do {
+  margin: 2rem;
 }
 
 #card-box {

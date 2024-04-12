@@ -1,9 +1,7 @@
-
-@import 'main' 
-
+@import main, mobile
 #home-page
     background-color: $colorBlue
-    height: 100vh
+    height: 110vh
     position: relative
 #navbar
     background: $white
@@ -67,11 +65,13 @@
             font-size: 1.5rem
 
 #phone-item
+    margin: 2rem 4rem
+    padding: 1rem 2rem
     @include flex(flex, center, center)
     .phone-item-1
-        @include item(30% , 50px , 100%)
+        @include item(30% , 3.5rem, 100%)
     .phone-item-2
-        @include item(40% , 50px , 100%)
+        @include item(40% , 3.5rem, 100%)
     .phone-item-3
         @extend .phone-item-1
     img
@@ -128,6 +128,9 @@
     opacity: 0.5
     right: 10%
     top: 0
+
+#what-we-do
+    margin: 2rem
 
 #card-box
     display: flex
