@@ -351,6 +351,8 @@ a {
 #client-testimonial .container .client-tetimonial-right {
   width: 66%;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 #client-testimonial .container .client-tetimonial-right-1-card {
   width: 70%;
@@ -379,6 +381,8 @@ a {
   border-radius: 10px;
   border: 1px solid rgba(250, 250, 250, 0.9);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: -170px;
 }
 #client-testimonial .container .client-tetimonial-right-2-card-left {
   width: 41%;
