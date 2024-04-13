@@ -22,7 +22,16 @@ $bggradiant:linear-gradient(80deg, #46a5bd 0%, #116a8d 100%)
 @mixin item($width, $margin)
     width: $width
     margin: $margin
+    
+@mixin content($display, $justify, $align, $columnGap)
+  display: $display
+  justify-content: $justify
+  align-items: $align
+  gap: $columnGap
 
+@mixin flexible($display, $width)
+    display: $display
+    width: $width
 *
     margin: 0
     padding: 0
@@ -40,6 +49,7 @@ ul
 
 a
     text-decoration: none
+    color: $colorDark 
 
 .container
     width: 1240px
