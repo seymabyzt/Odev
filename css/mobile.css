@@ -1,13 +1,48 @@
 @media (max-width: 450px) {
-  .container {
-    width: 425px;
-    margin: 0 auto;
+  #home-main .container {
+    max-width: 445px;
+    padding: 0;
+  }
+  #home-main-phone {
+    margin: 5rem 0 1rem 0;
+    padding: 2px;
+  }
+  #home-main-phone h1 {
+    font-size: 2rem;
+  }
+  #home-main-phone i {
+    font-size: 1.5rem;
   }
   #navbar {
     flex-direction: column;
   }
   #card-box {
     flex-direction: column;
+  }
+  #phone-item {
+    flex-direction: column;
+  }
+  #what-we-do .container {
+    max-width: 445px;
+    padding: 0;
+  }
+  #app-tech .container {
+    max-width: 445px;
+    padding: 0;
+  }
+  #app-tech .pills-tab-content {
+    flex-direction: column;
+  }
+  #app-tech .pills-tab-content-middle img {
+    width: auto;
+  }
+  #app-tech .pills-tab-content .card-left, #app-tech .pills-tab-content .card-right {
+    width: auto;
+    text-align: center;
+  }
+  #client-testimonial .container {
+    max-width: 445px;
+    padding: 0;
   }
 }
 

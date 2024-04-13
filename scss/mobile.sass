@@ -1,8 +1,42 @@
 @media (max-width: 450px) 
-    .container
-        width: 425px
-        margin: 0 auto
+    #home-main
+        .container
+            max-width: 445px
+            padding: 0
+        &-phone
+            margin: 5rem 0 1rem 0
+            padding: 2px
+            h1
+                font-size: 2rem
+            i
+                font-size: 1.5rem
     #navbar
         flex-direction: column
+
     #card-box
         flex-direction: column
+
+    #phone-item
+        flex-direction: column
+    #what-we-do
+        .container
+            max-width: 445px
+            padding: 0
+    #app-tech
+        .container
+            max-width: 445px
+            padding: 0
+        .pills-tab-content
+            flex-direction: column
+            &-middle
+                img
+                    width: auto
+            .card-left
+                width: auto
+                text-align: center
+            .card-right
+                @extend .card-left
+    #client-testimonial
+        .container
+            max-width: 445px
+            padding: 0
