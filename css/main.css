@@ -58,6 +58,9 @@ a {
 }
 
 .btn {
+  background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
+  border: none;
+  color: rgb(204, 228, 237);
   margin: 5px;
   padding: 8px 25px;
   text-align: center;
@@ -65,9 +68,6 @@ a {
   border-radius: 5px;
   display: inline-block;
   font-size: 1rem;
-  border: none;
-  color: rgb(204, 228, 237);
-  background: linear-gradient(80deg, #46a5bd 0%, #116a8d 100%);
 }
 .btn-2 {
   color: rgb(24, 60, 87);

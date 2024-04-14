@@ -1,6 +1,7 @@
 @media (max-width: 450px) {
   #home-main .container {
     max-width: 445px;
+    margin: 0 auto;
     padding: 0;
   }
   #home-main-phone {
@@ -15,6 +16,7 @@
   }
   #navbar {
     flex-direction: column;
+    margin: 0 auto;
   }
   #card-box {
     flex-direction: column;

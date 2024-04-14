@@ -24,14 +24,24 @@ $bggradiant:linear-gradient(80deg, #46a5bd 0%, #116a8d 100%)
     margin: $margin
     
 @mixin content($display, $justify, $align, $columnGap)
-  display: $display
-  justify-content: $justify
-  align-items: $align
-  gap: $columnGap
+    display: $display
+    justify-content: $justify
+    align-items: $align
+    gap: $columnGap
 
 @mixin flexible($display, $width)
     display: $display
     width: $width
+
+@mixin btngradiant($background, $border, $color)
+    background: $background
+    border: $border
+    color: $color
+
+@mixin caption($font, $color)
+    font-size: $font
+    color: $color
+
 *
     margin: 0
     padding: 0
@@ -52,9 +62,7 @@ a
     color: $colorDark 
 
 .container
-    width: 1240px
-    margin: 0 auto
-
+    @include item(1240px, 0 auto)
 .p
     &-x
         padding: 0 50px
@@ -69,11 +77,6 @@ a
 
 .flex
     @include flex(flex, center, center)
-
-@mixin btngradiant($background, $border, $color)
-    background: $background
-    border: $border
-    color: $color
     
 .btn-gradiant
     @include btngradiant($bggradiant, none, $color)
@@ -81,6 +84,7 @@ a
     display: block
 
 .btn
+    @include btngradiant($bggradiant , none , $color)
     margin: 5px
     padding: 8px 25px
     text-align: center
@@ -88,16 +92,9 @@ a
     border-radius: 5px
     display: inline-block
     font-size: 1rem
-    border: none
-    color: $color
-    background: $bggradiant
     &-2
         color: $colorDark
         background: $color
-
-@mixin caption($font, $color)
-    font-size: $font
-    color: $color
 
 .caption
     text-align: center
