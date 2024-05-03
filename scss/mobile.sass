@@ -1,3 +1,4 @@
+@import main
 @media (max-width: 450px) 
     #home-main
         .container
@@ -11,13 +12,51 @@
                 font-size: 2rem
             i
                 font-size: 1.5rem
+    #phone-item
+        margin: 0
+        padding: 0
+
+    .bg-line 
+        display: none
+    .bg-rounded 
+        display: none
+    .bg-rounded-2
+        display: none
+    .bg-line-second
+        display: none
+    .social-media-icons
+        display: none
+    #home-page
+        height: 100vh
+
     #navbar
-        flex-direction: column
-        margin: 0 auto
+        max-width: 450px
+        top: 0
+        right: 0
+        left: 0
+        flex-direction: row
+        flex-wrap: wrap
+        #logo
+            order: 1
+            width: 40%
+            margin-left: 0
+        .nav-item
+            order: 3
+            margin-left: auto
+            width: 100%
+            ul
+                justify-content: center
+                flex-wrap: wrap
+                column-gap: 0
+                li
+                    padding: 0.2rem
+        .btn-navbar
+            order: 2
+            width: 57%
+            margin-right: 0
 
     #card-box
         flex-direction: column
-
     #phone-item
         flex-direction: column
     #what-we-do
@@ -27,6 +66,7 @@
     #app-tech
         .container
             max-width: 445px
+            margin: 0 auto
             padding: 0
         .pills-tab-content
             flex-direction: column
@@ -42,4 +82,59 @@
     #client-testimonial
         .container
             max-width: 445px
+            margin: 0 auto
             padding: 0
+            flex-direction: column
+            .client-tetimonial-right
+                &-2-card
+                    display: none
+    .whats-your-plan
+        .container
+            max-width: 445px
+            margin: 0 auto
+            padding: 0
+            .plans-card
+                display: block
+                
+
+    .app-screen
+        .container
+            max-width: 445px
+            margin: 0 auto
+            padding: 0
+            .app-screen-phone
+                &-content
+                    flex-wrap: wrap
+                    img
+                        width: 25%
+                        border-radius: 10px
+                &-mockup
+                    display: none
+
+    .our-team
+        .container
+            max-width: 445px
+            margin: 0 auto
+            padding: 0
+        &-card
+            flex-direction: column    
+    .build-your
+        .container
+            max-width: 445px
+            margin: 0 auto
+            padding: 0
+    .get-in-touch
+        .container
+            max-width: 445px
+            margin: 0 auto
+            padding: 0
+            .get-in-touch-content
+                flex-direction: column
+    .footer
+        .container
+            max-width: 445px
+            margin: 0 auto
+            padding: 0
+            .footer-content
+                display: grid
+                grid-template-columns: repeat(2, 2fr)
