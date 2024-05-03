@@ -581,6 +581,11 @@ a {
   border: 1px solid #ccc;
   resize: none;
 }
+.get-in-touch-content-right .harita {
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+}
 .get-in-touch-content-bottom {
   display: flex;
   align-items: center;

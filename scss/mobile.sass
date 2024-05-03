@@ -6,12 +6,13 @@
             margin: 0 auto
             padding: 0
         &-phone
-            margin: 5rem 0 1rem 0
-            padding: 2px
+            margin: 0
+            padding: 8rem 0.3rem 1rem 0.3rem
             h1
-                font-size: 2rem
-            i
                 font-size: 1.5rem
+            i
+                font-size: 0.8rem
+
     #phone-item
         margin: 0
         padding: 0
@@ -67,35 +68,68 @@
         .container
             max-width: 445px
             margin: 0 auto
-            padding: 0
+            
         .pills-tab-content
             flex-direction: column
+            justify-content: left
+            align-items: left
+            padding: 0
             &-middle
+                width: 50%
+                margin: 0 auto
                 img
-                    width: auto
-            .card-left
-                width: auto
-                text-align: center
+                    width: 100%
+            .card-left 
+                text-align: left
+                justify-content: left
+                padding: 0 !important
             .card-right
                 @extend .card-left
                 
     #client-testimonial
+        padding: 2rem 0.4rem
         .container
             max-width: 445px
             margin: 0 auto
             padding: 0
             flex-direction: column
+            .client-tetimonial-left 
+                width: 100%
+                .caption
+                    text-align: left
             .client-tetimonial-right
+                width: 100%
                 &-2-card
                     display: none
+                &-1-card
+                    width: 100%
+                    &-left
+                        width: 30%
+                .caption
+                    text-align: left
+                    padding: 0.09rem 0 0.09rem 0.4rem
+                    h6
+                        @include caption(0.1rem , $colorBlue)
+                    h1
+                        @include caption(1rem , $colorDark)
+                        margin-top: 15px
+                    h4
+                        @include caption(0.8rem , $colorDark)
+                        opacity: 0.5
     .whats-your-plan
         .container
             max-width: 445px
             margin: 0 auto
             padding: 0
             .plans-card
-                display: block
-                
+                flex-direction: column
+                align-items: center
+                &-left
+                    width: 80%
+                &-middle
+                    width: 80%
+                &-right
+                    width: 80%
 
     .app-screen
         .container
@@ -121,8 +155,17 @@
     .build-your
         .container
             max-width: 445px
-            margin: 0 auto
+            margin: 13rem auto
             padding: 0
+            .build-your-content
+                flex-direction: column
+                &-right
+                    width: 70%
+                    height: auto
+                    img
+                        width: 100%  
+                        
+        
     .get-in-touch
         .container
             max-width: 445px
@@ -130,6 +173,13 @@
             padding: 0
             .get-in-touch-content
                 flex-direction: column
+                &-right
+                    .harita
+                        width: auto
+                        height: auto
+                        margin: 0 auto
+                &-bottom
+                    flex-wrap: wrap
     .footer
         .container
             max-width: 445px

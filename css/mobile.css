@@ -104,14 +104,14 @@ a {
     padding: 0;
   }
   #home-main-phone {
-    margin: 5rem 0 1rem 0;
-    padding: 2px;
+    margin: 0;
+    padding: 8rem 0.3rem 1rem 0.3rem;
   }
   #home-main-phone h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #home-main-phone i {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
   #phone-item {
     margin: 0;
@@ -179,17 +179,27 @@ a {
   #app-tech .container {
     max-width: 445px;
     margin: 0 auto;
-    padding: 0;
   }
   #app-tech .pills-tab-content {
     flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 0;
+  }
+  #app-tech .pills-tab-content-middle {
+    width: 50%;
+    margin: 0 auto;
   }
   #app-tech .pills-tab-content-middle img {
-    width: auto;
+    width: 100%;
   }
   #app-tech .pills-tab-content .card-left, #app-tech .pills-tab-content .card-right {
-    width: auto;
-    text-align: center;
+    text-align: left;
+    justify-content: left;
+    padding: 0 !important;
+  }
+  #client-testimonial {
+    padding: 2rem 0.4rem;
   }
   #client-testimonial .container {
     max-width: 445px;
@@ -197,8 +207,41 @@ a {
     padding: 0;
     flex-direction: column;
   }
+  #client-testimonial .container .client-tetimonial-left {
+    width: 100%;
+  }
+  #client-testimonial .container .client-tetimonial-left .caption {
+    text-align: left;
+  }
+  #client-testimonial .container .client-tetimonial-right {
+    width: 100%;
+  }
   #client-testimonial .container .client-tetimonial-right-2-card {
     display: none;
+  }
+  #client-testimonial .container .client-tetimonial-right-1-card {
+    width: 100%;
+  }
+  #client-testimonial .container .client-tetimonial-right-1-card-left {
+    width: 30%;
+  }
+  #client-testimonial .container .client-tetimonial-right .caption {
+    text-align: left;
+    padding: 0.09rem 0 0.09rem 0.4rem;
+  }
+  #client-testimonial .container .client-tetimonial-right .caption h6 {
+    font-size: 0.1rem;
+    color: rgb(0, 117, 163);
+  }
+  #client-testimonial .container .client-tetimonial-right .caption h1 {
+    font-size: 1rem;
+    color: rgb(24, 60, 87);
+    margin-top: 15px;
+  }
+  #client-testimonial .container .client-tetimonial-right .caption h4 {
+    font-size: 0.8rem;
+    color: rgb(24, 60, 87);
+    opacity: 0.5;
   }
   .whats-your-plan .container {
     max-width: 445px;
@@ -206,7 +249,17 @@ a {
     padding: 0;
   }
   .whats-your-plan .container .plans-card {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whats-your-plan .container .plans-card-left {
+    width: 80%;
+  }
+  .whats-your-plan .container .plans-card-middle {
+    width: 80%;
+  }
+  .whats-your-plan .container .plans-card-right {
+    width: 80%;
   }
   .app-screen .container {
     max-width: 445px;
@@ -233,8 +286,18 @@ a {
   }
   .build-your .container {
     max-width: 445px;
-    margin: 0 auto;
+    margin: 13rem auto;
     padding: 0;
+  }
+  .build-your .container .build-your-content {
+    flex-direction: column;
+  }
+  .build-your .container .build-your-content-right {
+    width: 70%;
+    height: auto;
+  }
+  .build-your .container .build-your-content-right img {
+    width: 100%;
   }
   .get-in-touch .container {
     max-width: 445px;
@@ -243,6 +306,14 @@ a {
   }
   .get-in-touch .container .get-in-touch-content {
     flex-direction: column;
+  }
+  .get-in-touch .container .get-in-touch-content-right .harita {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  .get-in-touch .container .get-in-touch-content-bottom {
+    flex-wrap: wrap;
   }
   .footer .container {
     max-width: 445px;
